@@ -8,41 +8,48 @@ body {
   font-family: $fontFamily;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
+.header_main {
+  height: 100px;
+  background-color: grey;
 }
 
-.header_nav {
-  width: 100%;
-  height: 80px;
-  background-color: lightblue;
-  line-height: 80px;
-  vertical-align: middle;
-  & :after {
+.container_main {
+  height: 4000px;
+  background: yellow;
+}
+
+.people_section {
+  height: 800px;
+  background-color: red;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  & :after {
     @include clearFix;
   }
-  &_left {
-    width: 50%;
-    height: 80px;
-    background-color: green;
+}
+
+.col {
+  &_1 {
+    height: 300px;
+    border: 1px solid black;
+    width: 33.33%;
     @include floatBox;
   }
-  &_right {
-    width: 50%;
-    height: 80px;
-    text-align: right;
-    background-color: red;
+  &_2 {
+    height: 300px;
+    border: 1px solid black;
+    width: 33.33%;
     @include floatBox;
   }
-  ul {
-    list-style: none;
-  }
-  li {
-    display: inline-block;
-    padding: 0 20px;
+  &_3 {
+    height: 300px;
+    border: 1px solid black;
+    width: 33.33%;
+    @include floatBox;
   }
 }
+
 
 .btn {
   margin-right: 30px;

@@ -10,6 +10,56 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.header_main {
+  height: 100px;
+  background-color: grey;
+}
+
+.container_main {
+  height: 4000px;
+  background: yellow;
+}
+
+.people_section {
+  height: 800px;
+  background-color: red;
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+
+.people_section :after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.col_1 {
+  height: 300px;
+  border: 1px solid black;
+  width: 33.33%;
+  float: left;
+}
+
+.col_2 {
+  height: 300px;
+  border: 1px solid black;
+  width: 33.33%;
+  float: left;
+}
+
+.col_3 {
+  height: 300px;
+  border: 1px solid black;
+  width: 33.33%;
+  float: left;
+}
+
+.btn {
+  margin-right: 30px;
+  padding: 0 20px;
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -53,8 +103,22 @@ body {
   padding: 0 20px;
 }
 
-.btn {
-  margin-right: 30px;
-  padding: 0 20px;
+.jumbo {
+  background-color: lime;
+  height: 500px;
+}
+
+.jumbo_left {
+  width: 50%;
+  background-color: lightgreen;
+  height: 500px;
+  float: left;
+}
+
+.jumbo_right {
+  width: 50%;
+  height: 500px;
+  background-color: orange;
+  float: left;
 }
 
