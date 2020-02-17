@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);* {
+@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);@charset "UTF-8";
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,5 +8,53 @@
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.header_nav {
+  width: 100%;
+  height: 80px;
+  background-color: lightblue;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.header_nav :after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.header_nav_left {
+  width: 50%;
+  height: 80px;
+  background-color: green;
+  float: left;
+}
+
+.header_nav_right {
+  width: 50%;
+  height: 80px;
+  text-align: right;
+  background-color: red;
+  float: left;
+}
+
+.header_nav ul {
+  list-style: none;
+}
+
+.header_nav li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.btn {
+  margin-right: 30px;
+  padding: 0 20px;
 }
 

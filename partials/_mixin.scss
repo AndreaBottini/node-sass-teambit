@@ -1,0 +1,9 @@
+@mixin floatBox {
+  float: left;
+}
+
+@mixin clearFix {
+  display: table;
+  content: "";
+  clear: both;
+}
