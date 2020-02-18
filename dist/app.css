@@ -208,6 +208,29 @@ h1 {
   }
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown .drop {
+  position: absolute;
+  width: 100px;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  line-height: 35px;
+  margin-left: -20px;
+  box-shadow: 5px 5px 10px 0px #736f6e;
+  border-radius: 10px;
+  text-align: left;
+  display: none;
+}
+
+.dropdown:hover .drop {
+  display: block;
+}
+
 .container {
   width: 90%;
   margin: auto;
