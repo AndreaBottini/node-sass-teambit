@@ -23,6 +23,19 @@ h1 {
   text-align: center;
 }
 
+@media screen and (max-width: 760px) {
+  .section_title {
+    width: 40%;
+    height: 40px;
+    font-size: 18px;
+    margin: auto;
+    color: $colorTitle;
+    text-align: center;
+  }
+}
+
+
+
 .burger_menu {
   font-size: 20px;
 }
