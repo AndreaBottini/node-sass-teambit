@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap);@charset "UTF-8";
 
 * {
   margin: 0;
@@ -10,54 +10,43 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.header_main {
-  height: 100px;
-  background-color: grey;
-}
-
-.container_main {
-  height: 4000px;
-  background: yellow;
-}
-
-.people_section {
-  height: 800px;
-  background-color: red;
-  width: 70%;
-  display: flex;
-  margin: auto;
-}
-
-.people_section :after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
-.col_1 {
-  height: 300px;
-  border: 1px solid black;
-  width: 33.33%;
-  float: left;
-}
-
-.col_2 {
-  height: 300px;
-  border: 1px solid black;
-  width: 33.33%;
-  float: left;
-}
-
-.col_3 {
-  height: 300px;
-  border: 1px solid black;
-  width: 33.33%;
-  float: left;
-}
-
 .btn {
-  margin-right: 30px;
-  padding: 0 20px;
+  margin: 0 25px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #30488E;
+  background-color: white;
+  color: #30488E;
+}
+
+.btn:hover {
+  background-color: #30488E;
+  color: white;
+}
+
+.google_icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.logo_img {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 760px) {
+  .header_nav_right .burger_menu {
+    display: block;
+  }
+
+  .jumbo_left {
+    min-width: -webkit-fill-available;
+  }
+
+  .jumbo_right {
+    min-width: -webkit-fill-available;
+  }
 }
 
 .container {
@@ -68,7 +57,6 @@ body {
 .header_nav {
   width: 100%;
   height: 80px;
-  background-color: lightblue;
   line-height: 80px;
   vertical-align: middle;
 }
@@ -80,18 +68,22 @@ body {
 }
 
 .header_nav_left {
-  width: 50%;
+  width: 30%;
   height: 80px;
-  background-color: green;
+  background-color: white;
   float: left;
 }
 
 .header_nav_right {
-  width: 50%;
+  width: 70%;
   height: 80px;
   text-align: right;
-  background-color: red;
+  background-color: white;
   float: left;
+}
+
+.header_nav_right .burger_menu {
+  display: none;
 }
 
 .header_nav ul {
@@ -101,6 +93,17 @@ body {
 .header_nav li {
   display: inline-block;
   padding: 0 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header_nav a {
+  text-decoration: none;
+  color: #30488E;
+}
+
+.header_nav a:hover {
+  color: #263972;
 }
 
 .jumbo {
@@ -119,6 +122,6 @@ body {
   width: 50%;
   height: 500px;
   background-color: orange;
-  float: left;
+  float: right;
 }
 

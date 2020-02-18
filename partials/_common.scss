@@ -8,50 +8,87 @@ body {
   font-family: $fontFamily;
 }
 
-.header_main {
-  height: 100px;
-  background-color: grey;
-}
-
-.container_main {
-  height: 4000px;
-  background: yellow;
-}
-
-.people_section {
-  height: 800px;
-  background-color: red;
-  width: 70%;
-  display: flex;
-  margin: auto;
-  & :after {
-    @include clearFix;
-  }
-}
-
-.col {
-  &_1 {
-    height: 300px;
-    border: 1px solid black;
-    width: 33.33%;
-    @include floatBox;
-  }
-  &_2 {
-    height: 300px;
-    border: 1px solid black;
-    width: 33.33%;
-    @include floatBox;
-  }
-  &_3 {
-    height: 300px;
-    border: 1px solid black;
-    width: 33.33%;
-    @include floatBox;
-  }
-}
+// .header_main {
+//   height: 100px;
+//   background-color: grey;
+// }
+//
+// .container_main {
+//   height: 4000px;
+//   background: yellow;
+// }
+//
+// .people_section {
+//   height: 800px;
+//   background-color: red;
+//   width: 70%;
+//   margin: auto;
+//   & :after {
+//     @include clearFix;
+//   }
+// }
+//
+// .col {
+//   &_1 {
+//     height: 300px;
+//     border: 1px solid black;
+//     width: 33.33%;
+//     @include floatBoxLeft;
+//   }
+//   &_2 {
+//     height: 300px;
+//     border: 1px solid black;
+//     width: 33.33%;
+//     @include floatBoxLeft;
+//   }
+//   &_3 {
+//     height: 300px;
+//     border: 1px solid black;
+//     width: 33.33%;
+//     @include floatBoxLeft;
+//   }
+// }
 
 
 .btn {
-  margin-right: 30px;
-  padding: 0 20px;
+  margin: 0 25px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #30488E;
+  background-color: white;
+  color: #30488E;
+}
+.btn:hover {
+  background-color: #30488E;
+  color: white;
+}
+
+.google_icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.logo_img {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 760px) {
+  .header_nav {
+    &_right {
+      .burger_menu {
+        display: block;
+      }
+    }
+  }
+  .jumbo {
+    &_left {
+      min-width: -webkit-fill-available;
+    }
+    &_right {
+      min-width: -webkit-fill-available;
+    }
+  }
+
 }

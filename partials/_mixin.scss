@@ -1,5 +1,9 @@
-@mixin floatBox {
+@mixin floatBoxLeft {
   float: left;
+}
+
+@mixin floatBoxRight {
+  float: right;
 }
 
 @mixin clearFix {
