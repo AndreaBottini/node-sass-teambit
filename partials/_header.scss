@@ -6,22 +6,23 @@
 .header_nav {
   width: 90%;
   height: 80px;
+  border-bottom: 1px solid black;
   line-height: 80px;
   vertical-align: middle;
   position: fixed;
   z-index: 1000;
-  & :after {
+  &:after {
     @include clearFix;
   }
   &_left {
     width: 30%;
-    height: 80px;
+    height: 100%;
     background-color: white;
     @include floatBoxLeft;
   }
   &_right {
     width: 70%;
-    height: 80px;
+    height: 100%;
     text-align: right;
     background-color: white;
     @include floatBoxLeft;
@@ -50,17 +51,47 @@
 .jumbo {
   height: 580px;
   padding-top: 160px;
+  &:after {
+    @include clearFix;
+  }
   &_left {
-    padding-top: 80px;
     width: 40%;
     background-color: white;
     @include floatBoxLeft;
   }
   &_right {
-    padding-top: 80px;
     width: 60%;
     text-align: right;
     @include floatBoxRight;
+  }
+}
+@media screen and (max-width: 760px) {
+
+  .header_nav {
+    ul {
+      display: none;
+    }
+    &_right {
+      .burger_menu {
+        display: block;
+      }
+    }
+  }
+
+
+  .jumbo {
+    width: 100%;
+    height: auto;
+    &_left {
+      // min-width: -webkit-fill-available;
+      text-align: center;
+      width: 100%;
+    }
+    &_right {
+      // min-width: -webkit-fill-available;
+      text-align: center;
+      width: 100%;
+    }
   }
 }
 

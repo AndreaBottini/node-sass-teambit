@@ -10,16 +10,18 @@ body {
 
 h1 {
   font-size: $fontHeightH1;
-  padding-right: 55px;
   line-height: 70px;
   color: $colorTitle;
   margin-bottom: $marginBottom;
 }
 
+.burger_menu {
+  font-size: 20px;
+}
+
 .p_title {
   font-size: 20px;
   color: $colorTitle;
-  padding-right: 150px;
   line-height: 30px;
   margin-bottom: $marginBottom;
 }
@@ -95,7 +97,7 @@ h1 {
 }
 
 .jumbo_image {
-  width: 100%;
+  width: 90%;
 }
 
 .mail_title {
@@ -113,6 +115,7 @@ h1 {
 
 
 @media screen and (max-width: 760px) {
+
   .header_nav {
     &_right {
       .burger_menu {
@@ -121,11 +124,17 @@ h1 {
     }
   }
   .jumbo {
+    width: 100%;
+    height: auto;
     &_left {
-      min-width: -webkit-fill-available;
+      // min-width: -webkit-fill-available;
+      text-align: center;
+      width: 100%;
     }
     &_right {
-      min-width: -webkit-fill-available;
+      // min-width: -webkit-fill-available;
+      text-align: center;
+      width: 100%;
     }
   }
 }

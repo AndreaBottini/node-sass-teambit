@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap);@charset "UTF-8";
-
-* {
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,16 +10,18 @@ body {
 
 h1 {
   font-size: 50px;
-  padding-right: 55px;
   line-height: 70px;
   color: #58402c;
   margin-bottom: 30px;
 }
 
+.burger_menu {
+  font-size: 20px;
+}
+
 .p_title {
   font-size: 20px;
   color: #58402c;
-  padding-right: 150px;
   line-height: 30px;
   margin-bottom: 30px;
 }
@@ -57,7 +57,7 @@ h1 {
 }
 
 .jumbo_image {
-  width: 100%;
+  width: 90%;
 }
 
 .mail_title {
@@ -78,12 +78,19 @@ h1 {
     display: block;
   }
 
+  .jumbo {
+    width: 100%;
+    height: auto;
+  }
+
   .jumbo_left {
-    min-width: -webkit-fill-available;
+    text-align: center;
+    width: 100%;
   }
 
   .jumbo_right {
-    min-width: -webkit-fill-available;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -95,13 +102,14 @@ h1 {
 .header_nav {
   width: 90%;
   height: 80px;
+  border-bottom: 1px solid black;
   line-height: 80px;
   vertical-align: middle;
   position: fixed;
   z-index: 1000;
 }
 
-.header_nav :after {
+.header_nav:after {
   display: table;
   content: "";
   clear: both;
@@ -109,14 +117,14 @@ h1 {
 
 .header_nav_left {
   width: 30%;
-  height: 80px;
+  height: 100%;
   background-color: white;
   float: left;
 }
 
 .header_nav_right {
   width: 70%;
-  height: 80px;
+  height: 100%;
   text-align: right;
   background-color: white;
   float: left;
@@ -151,18 +159,47 @@ h1 {
   padding-top: 160px;
 }
 
+.jumbo:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
 .jumbo_left {
-  padding-top: 80px;
   width: 40%;
   background-color: white;
   float: left;
 }
 
 .jumbo_right {
-  padding-top: 80px;
   width: 60%;
   text-align: right;
   float: right;
+}
+
+@media screen and (max-width: 760px) {
+  .header_nav ul {
+    display: none;
+  }
+
+  .header_nav_right .burger_menu {
+    display: block;
+  }
+
+  .jumbo {
+    width: 100%;
+    height: auto;
+  }
+
+  .jumbo_left {
+    text-align: center;
+    width: 100%;
+  }
+
+  .jumbo_right {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .btn_header {
