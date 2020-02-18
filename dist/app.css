@@ -15,6 +15,14 @@ h1 {
   margin-bottom: 30px;
 }
 
+.section_title {
+  width: 40%;
+  height: 40px;
+  margin: auto;
+  color: #58402c;
+  text-align: center;
+}
+
 .burger_menu {
   font-size: 20px;
 }
@@ -23,6 +31,95 @@ h1 {
   font-size: 20px;
   color: #58402c;
   line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.container_header {
+  margin-top: 80px;
+  background-color: #FFE7D2;
+}
+
+.header_main {
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  padding-top: 80px;
+  vertical-align: middle;
+}
+
+.container_main {
+  height: 4000px;
+  background: #FFE7D2;
+}
+
+.people_section {
+  height: 800px;
+  background-color: #FFE7D2;
+  width: 70%;
+  margin: auto;
+}
+
+.people_section :after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.col {
+  position: relative;
+}
+
+.col_1 {
+  height: 300px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+.col_2 {
+  height: 300px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+.col_3 {
+  height: 300px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+@media screen and (max-width: 760px) {
+  .col {
+    width: 100%;
+    height: auto;
+  }
+
+  .col_1 {
+    width: 100%;
+  }
+
+  .col_2 {
+    width: 100%;
+    height: 300px;
+  }
+
+  .col_3 {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.box_image {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.box_image img {
+  height: 400px;
+  padding-top: 80px;
   margin-bottom: 30px;
 }
 
@@ -71,6 +168,23 @@ h1 {
   font-size: 14px;
   margin-left: 5px;
   vertical-align: middle;
+}
+
+.people_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 140px;
+}
+
+.text_section {
+  text-align: center;
+  padding-top: 250px;
+  width: 50%;
+  margin: auto;
+  color: #58402c;
 }
 
 @media screen and (max-width: 760px) {
@@ -155,7 +269,6 @@ h1 {
 }
 
 .jumbo {
-  height: 580px;
   padding-top: 160px;
 }
 

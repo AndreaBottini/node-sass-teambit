@@ -15,6 +15,14 @@ h1 {
   margin-bottom: $marginBottom;
 }
 
+.section_title {
+  width: 40%;
+  height: 40px;
+  margin: auto;
+  color: $colorTitle;
+  text-align: center;
+}
+
 .burger_menu {
   font-size: 20px;
 }
@@ -26,46 +34,84 @@ h1 {
   margin-bottom: $marginBottom;
 }
 
-// .header_main {
-//   height: 100px;
-//   background-color: grey;
-// }
-//
-// .container_main {
-//   height: 4000px;
-//   background: yellow;
-// }
-//
-// .people_section {
-//   height: 800px;
-//   background-color: red;
-//   width: 70%;
-//   margin: auto;
-//   & :after {
-//     @include clearFix;
-//   }
-// }
-//
-// .col {
-//   &_1 {
-//     height: 300px;
-//     border: 1px solid black;
-//     width: 33.33%;
-//     @include floatBoxLeft;
-//   }
-//   &_2 {
-//     height: 300px;
-//     border: 1px solid black;
-//     width: 33.33%;
-//     @include floatBoxLeft;
-//   }
-//   &_3 {
-//     height: 300px;
-//     border: 1px solid black;
-//     width: 33.33%;
-//     @include floatBoxLeft;
-//   }
-// }
+.container_header {
+  margin-top: 80px;
+  background-color: $colorSection;
+}
+
+.header_main {
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  padding-top: 80px;
+  vertical-align: middle;
+}
+
+.container_main {
+  height: 4000px;
+  background: #FFE7D2;;
+}
+
+.people_section {
+  height: 800px;
+  background-color: $colorSection;
+  width: 70%;
+  margin: auto;
+  & :after {
+    @include clearFix;
+  }
+}
+
+.col {
+  position: relative;
+  &_1 {
+    height: 300px;
+    width: 33.33%;
+    @include floatBoxLeft;
+    position: relative;
+  }
+  &_2 {
+    height: 300px;
+    width: 33.33%;
+    @include floatBoxLeft;
+    position: relative;
+  }
+  &_3 {
+    height: 300px;
+    width: 33.33%;
+    @include floatBoxLeft;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 760px) {
+.col {
+  width: 100%;
+  height: auto;
+  &_1 {
+    width: 100%;
+  }
+  &_2 {
+    width: 100%;
+    height: 300px;
+  }
+  &_3 {
+    width: 100%;
+    height: 300px;
+  }
+}
+}
+
+.box_image {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  img {
+    height: 400px;
+    padding-top: 80px;
+    margin-bottom: 30px;
+  }
+}
 
 .btn_classic {
   padding: 10px 15px;
@@ -111,6 +157,23 @@ h1 {
   font-size: 14px;
   margin-left: 5px;
   vertical-align: middle;
+}
+
+.people_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 140px;
+}
+
+.text_section {
+  text-align: center;
+  padding-top: 250px;
+  width: 50%;
+  margin: auto;
+  color: $colorTitle;
 }
 
 
