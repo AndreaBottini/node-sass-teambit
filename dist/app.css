@@ -10,21 +10,42 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.btn {
-  margin: 0 25px;
+h1 {
+  font-size: 50px;
+  padding-right: 55px;
+  line-height: 70px;
+  color: #58402c;
+  margin-bottom: 30px;
+}
+
+.p_title {
+  font-size: 20px;
+  color: #58402c;
+  padding-right: 150px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.btn_classic {
   padding: 10px 15px;
   border-radius: 10px;
   border: 1px solid #30488E;
-  background-color: white;
-  color: #30488E;
-}
-
-.btn:hover {
   background-color: #30488E;
   color: white;
 }
 
-.google_icon {
+.btn_classic:hover {
+  background-color: #58402c;
+  color: white;
+}
+
+.divisory {
+  font-size: 12px;
+  color: #58402c;
+  margin: 0 10px;
+}
+
+.button_icon {
   width: 15px;
   height: 15px;
   margin-right: 10px;
@@ -32,6 +53,23 @@ body {
 }
 
 .logo_img {
+  vertical-align: middle;
+}
+
+.jumbo_image {
+  width: 100%;
+}
+
+.mail_title {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #58402c;
+}
+
+.title_fa {
+  color: #58402c;
+  font-size: 14px;
+  margin-left: 5px;
   vertical-align: middle;
 }
 
@@ -55,10 +93,12 @@ body {
 }
 
 .header_nav {
-  width: 100%;
+  width: 90%;
   height: 80px;
   line-height: 80px;
   vertical-align: middle;
+  position: fixed;
+  z-index: 1000;
 }
 
 .header_nav :after {
@@ -107,21 +147,35 @@ body {
 }
 
 .jumbo {
-  background-color: lime;
-  height: 500px;
+  height: 580px;
+  padding-top: 160px;
 }
 
 .jumbo_left {
-  width: 50%;
-  background-color: lightgreen;
-  height: 500px;
+  padding-top: 80px;
+  width: 40%;
+  background-color: white;
   float: left;
 }
 
 .jumbo_right {
-  width: 50%;
-  height: 500px;
-  background-color: orange;
+  padding-top: 80px;
+  width: 60%;
+  text-align: right;
   float: right;
+}
+
+.btn_header {
+  margin: 0 25px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #30488E;
+  background-color: white;
+  color: #30488E;
+}
+
+.btn_header:hover {
+  background-color: #30488E;
+  color: white;
 }
 

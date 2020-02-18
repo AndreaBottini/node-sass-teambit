@@ -8,6 +8,22 @@ body {
   font-family: $fontFamily;
 }
 
+h1 {
+  font-size: $fontHeightH1;
+  padding-right: 55px;
+  line-height: 70px;
+  color: $colorTitle;
+  margin-bottom: $marginBottom;
+}
+
+.p_title {
+  font-size: 20px;
+  color: $colorTitle;
+  padding-right: 150px;
+  line-height: 30px;
+  margin-bottom: $marginBottom;
+}
+
 // .header_main {
 //   height: 100px;
 //   background-color: grey;
@@ -49,21 +65,25 @@ body {
 //   }
 // }
 
-
-.btn {
-  margin: 0 25px;
+.btn_classic {
   padding: 10px 15px;
   border-radius: 10px;
-  border: 1px solid #30488E;
-  background-color: white;
-  color: #30488E;
+  border: 1px solid $colorBtn;
+  background-color: $colorBtn;
+  color: white;
 }
-.btn:hover {
-  background-color: #30488E;
+.btn_classic:hover {
+  background-color: #58402c;
   color: white;
 }
 
-.google_icon {
+.divisory {
+  font-size: 12px;
+  color: $colorTitle;
+  margin: 0 10px;
+}
+
+.button_icon {
   width: 15px;
   height: 15px;
   margin-right: 10px;
@@ -73,6 +93,24 @@ body {
 .logo_img {
   vertical-align: middle;
 }
+
+.jumbo_image {
+  width: 100%;
+}
+
+.mail_title {
+  margin-top: 30px;
+  font-size: 14px;
+  color: $colorTitle;
+}
+
+.title_fa {
+  color: $colorTitle;
+  font-size: 14px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
 
 @media screen and (max-width: 760px) {
   .header_nav {
@@ -90,5 +128,4 @@ body {
       min-width: -webkit-fill-available;
     }
   }
-
 }

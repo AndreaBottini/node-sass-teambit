@@ -4,10 +4,12 @@
 }
 
 .header_nav {
-  width: 100%;
+  width: 90%;
   height: 80px;
   line-height: 80px;
   vertical-align: middle;
+  position: fixed;
+  z-index: 1000;
   & :after {
     @include clearFix;
   }
@@ -46,18 +48,31 @@
 }
 
 .jumbo {
-  background-color: lime;
-  height: 500px;
+  height: 580px;
+  padding-top: 160px;
   &_left {
-    width: 50%;
-    background-color: lightgreen;
-    height: 500px;
+    padding-top: 80px;
+    width: 40%;
+    background-color: white;
     @include floatBoxLeft;
   }
   &_right {
-    width: 50%;
-    height: 500px;
-    background-color: orange;
+    padding-top: 80px;
+    width: 60%;
+    text-align: right;
     @include floatBoxRight;
   }
+}
+
+.btn_header {
+  margin: 0 25px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid $colorBtn;
+  background-color: white;
+  color: $colorBtn;
+}
+.btn_header:hover {
+  background-color: $colorBtn;
+  color: white;
 }
